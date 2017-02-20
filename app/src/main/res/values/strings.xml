@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Baseball Game Counter</string>
+    <string name="reset">RESET</string>
+    <string name="teamA_name">Team A</string>
+    <string name="teamB_name">Team B</string>
+    <string name="score">0</string>
+    <string name="add_6_points">+ 6 POINTS</string>
+    <string name="add_3_points">+ 3 POINTS</string>
+    <string name="add_2_points">+ 2 POINTS</string>
+    <string name="add_1_points">+ 1 POINTS</string>
+</resources>

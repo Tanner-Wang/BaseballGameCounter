@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.baseballgamecounter.MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_bottom_resetButton"
+        android:onClick="resetTheScore"
+        android:text="@string/reset"
+        android:textSize="@dimen/reset_button_textSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teamAName"
+                style="@style/CodeFont2"
+                android:padding="@dimen/padding_medium"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/team_name_color"
+                android:text="@string/teamA_name" />
+
+            <TextView
+                android:id="@+id/scoreForTeamA"
+                style="@style/CodeFont3"
+                android:paddingBottom="@dimen/padding_bottom_large"
+                android:layout_below="@id/teamAName"
+                android:textColor="@color/score_color"
+                android:fontFamily="sans-serif-light" />
+
+            <Button
+                android:id="@+id/add6PointsForTeamA"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/scoreForTeamA"
+                android:onClick="Add6PointsForTeamA"
+                android:text="@string/add_6_points" />
+
+            <Button
+                android:id="@+id/add3PointsForTeamA"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add6PointsForTeamA"
+                android:onClick="Add3PointsForTeamA"
+                android:text="@string/add_3_points" />
+
+            <Button
+                android:id="@+id/add2PointsForTeamA"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add3PointsForTeamA"
+                android:onClick="Add2PointsForTeamA"
+                android:text="@string/add_2_points" />
+
+            <Button
+                style="@style/CodeFont1"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add2PointsForTeamA"
+                android:onClick="Add1PointsForTeamA"
+                android:text="@string/add_1_points" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/teamBName"
+                style="@style/CodeFont2"
+                android:padding="@dimen/padding_medium"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/team_name_color"
+                android:text="@string/teamB_name" />
+
+            <TextView
+                android:id="@+id/scoreForTeamB"
+                style="@style/CodeFont3"
+                android:paddingBottom="@dimen/padding_bottom_large"
+                android:layout_below="@id/teamBName"
+                android:textColor="@color/score_color"
+                android:fontFamily="sans-serif-light" />
+
+            <Button
+                android:id="@+id/add6PointsForTeamB"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/scoreForTeamB"
+                android:onClick="Add6PointsForTeamB"
+                android:text="@string/add_6_points" />
+
+            <Button
+                android:id="@+id/add3PointsForTeamB"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add6PointsForTeamB"
+                android:onClick="Add3PointsForTeamB"
+                android:text="@string/add_3_points" />
+
+            <Button
+                android:id="@+id/add2PointsForTeamB"
+                style="@style/CodeFont1"
+                android:layout_marginBottom="@dimen/margin_bottom_small"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add3PointsForTeamB"
+                android:onClick="Add2PointsForTeamB"
+                android:text="@string/add_2_points" />
+
+            <Button
+                style="@style/CodeFont1"
+                android:layout_marginLeft="@dimen/margin_left_large"
+                android:layout_marginRight="@dimen/margin_right_large"
+                android:layout_below="@id/add2PointsForTeamB"
+                android:onClick="Add1PointsForTeamB"
+                android:text="@string/add_1_points" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
