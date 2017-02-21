@@ -7,14 +7,14 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    int sumScoreForA;
+    int sumScoreForB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    int sumScoreForA;
-    int sumScoreForB;
 
     public void resetTheScore(View view) {
         sumScoreForA = 0;
@@ -24,51 +24,51 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Add6PointsForTeamA(View view) {
-        sumScoreForA = sumScoreForA + 6;
+        sumScoreForA += 6;
         displayForA(sumScoreForA);
     }
 
     public void Add3PointsForTeamA(View view) {
-        sumScoreForA = sumScoreForA + 3;
+        sumScoreForA += 3;
         displayForA(sumScoreForA);
     }
 
     public void Add2PointsForTeamA(View view) {
-        sumScoreForA = sumScoreForA + 2;
+        sumScoreForA += 2;
         displayForA(sumScoreForA);
     }
 
     public void Add1PointsForTeamA(View view) {
-        sumScoreForA = sumScoreForA + 1;
+        sumScoreForA += 1;
         displayForA(sumScoreForA);
     }
 
     public void Add6PointsForTeamB(View view) {
-        sumScoreForB = sumScoreForB + 6;
+        sumScoreForB += 6;
         displayForB(sumScoreForB);
     }
 
     public void Add3PointsForTeamB(View view) {
-        sumScoreForB = sumScoreForB + 3;
+        sumScoreForB += 3;
         displayForB(sumScoreForB);
     }
 
     public void Add2PointsForTeamB(View view) {
-        sumScoreForB = sumScoreForB + 2;
+        sumScoreForB += 2;
         displayForB(sumScoreForB);
     }
 
     public void Add1PointsForTeamB(View view) {
-        sumScoreForB = sumScoreForB + 1;
+        sumScoreForB += 1;
         displayForB(sumScoreForB);
     }
 
-    public void displayForA(int scoreOfTeamA) {
+    private void displayForA(int scoreOfTeamA) {
         TextView t = (TextView) findViewById(R.id.scoreForTeamA);
         t.setText(String.valueOf(scoreOfTeamA));
     }
 
-    public void displayForB(int scoreOfTeamB) {
+    private void displayForB(int scoreOfTeamB) {
         TextView t = (TextView) findViewById(R.id.scoreForTeamB);
         t.setText(String.valueOf(scoreOfTeamB));
     }
