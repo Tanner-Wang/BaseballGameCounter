@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
@@ -129,7 +128,8 @@
         android:layout_marginBottom="@dimen/margin_bottom_resetButton"
         android:onClick="resetTheScore"
         android:text="@string/reset"
-        android:textColor="@color/team_name_color"
+        android:background="@drawable/click"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/reset_button_textSize"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_alignParentBottom="true"
